@@ -38,6 +38,25 @@
         let passwordLenght;
         while (true) {
           passwordLenght = parseInt(prompt("Enter the password lenght (between 8 and 128):"));
+          if (passwordLenght >= 8 && passwordLenght <= 128) {
+            break;
+          } else {
+            alert("Please enter a valid password length between 8 & 128. ");
+          }
+        }
+
+        // Prompt for character types
+        const includeLowercase = confirm("Include lowercase characters?");
+        const includeUppercase = confirm("Include uppercase characcters?");
+        const includeNumbers = confirm("Include numerics characters?");
+        const includeSymbols = confirm("Include special characters?");
+
+        // Validate that at least one character type is selected
+        if (!(includeLowercase || includeNumbers || includeSymbols)) {
+          alert("Please select at least one character type.");
+        }
+
+        
     </script>
   </body>
 </html>
