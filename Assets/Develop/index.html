@@ -56,7 +56,19 @@
           alert("Please select at least one character type.");
         }
 
-        
+        // Generate random password
+        const lowercaseChars = 'abcdefghijkmnopqrstuvwxyz';
+        const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const numbersChars = '0123456789';
+        const symbolsChars = '!@#$^&*()_+[]{}|;:,.<>?';
+
+        let allChars = '';
+        if (includeLowercase) allChars += loweraseChars;
+        if (includeUppercase) allChars += uppercaseChars; 
+        if (includeNumbers) allChars += numbersChars;
+        if (includeSymbols) allChars += symbolsChars; 
+
+        let password = '';
     </script>
   </body>
 </html>
