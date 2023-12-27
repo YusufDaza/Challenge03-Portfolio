@@ -34,11 +34,11 @@
       // Prompt for password length
       let passwordLength;
       while (true) {
-        passwordLength = parseInt(prompt("Enter the password length (between 0 and 9999):"));
-        if (passwordLength >= 0 && passwordLength <= 9999) {
+        passwordLength = parseInt(prompt("Enter the password length (between 8 and 128):"));
+        if (passwordLength >= 8 && passwordLength <= 128) {
           break;
         } else {
-          alert("Please enter a valid password length between 0 & 9999. ");
+          alert("Please enter a valid password length between 8 & 128. ");
         }
       }
     }
