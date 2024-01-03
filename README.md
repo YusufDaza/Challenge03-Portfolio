@@ -28,6 +28,10 @@ To run the project locally, follow these steps:
 2. Follow the prompts to select a password length and choose character types.
 3. The generated password will be displayed in the designated area.
 
+## Live Demo
+
+Check out the live version of the project [here](https://yusufdaza.github.io/Challenge03-Portfolio/).
+
 ## Credits
 
 - Author: Joseph Daza
